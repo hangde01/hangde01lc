@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ $# == 2 ];
+then
+  lowercase < $1 >$2
+fi
+
+if [ $# != 2 ];
+then
+  echo "usage error"
+  echo "usage: lc file1 file2"
+fi
